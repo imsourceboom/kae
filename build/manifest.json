@@ -1,0 +1,14 @@
+{
+    "name": "Korean Art in Europe",
+    "short_name": "KAE",
+    "description": "Korean Art in Europe",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "icons": [{
+        "src": "assets/favicons/homescreen48.png",
+        "sizes": "48x48",
+        "type": "image/png"
+    }]
+}
