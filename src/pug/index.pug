@@ -1,4 +1,112 @@
 extends ./_layout
 
 block main
-    include section/intro
+    .swiper-container
+        .swiper-wrapper
+            .swiper-slide
+                include section/index/intro
+
+            -
+                var represents = [
+                    {
+                        class: 'first',
+                        imgBig: '/assets/images/represent/무형_big.png',
+                        imgMiddle: '/assets/images/represent/무형_middle.png',
+                        imgSmall: '/assets/images/represent/무형_small.png',
+                        mobileTitle:'2013년 서울시 무형 문화재',
+                        title: '서울시 무형 문화재',
+                        time: '2013년 5월 14일 - 7월 14일',
+                        place: '이태리 로마 국립 동양 민속 박물관',
+                        cooperation: '서울시, 서울시 무형문화재단, 문화관광 체육부, 이태리 문화관광부, 주한 이탈리아 대사관',
+                    },
+                    {
+                        class: 'second',
+                        imgBig: '/assets/images/represent/한지_big.png',
+                        imgMiddle: '/assets/images/represent/한지_middle.png',
+                        imgSmall: '/assets/images/represent/한지_small.png',
+                        mobileTitle:'2011년 한지 전시회',
+                        title: '한지 전시회',
+                        time: '2011년 6월 9일 - 8월 7일',
+                        place: '이태리 국립 민속 박물관',
+                        cooperation: '원주 한지개발원, 원주 한지테마파크, 원주시, 강원도, 주한 이탈리아 대사관',
+                    },
+                    {
+                        class: 'third',
+                        imgBig: '/assets/images/represent/나전_big.png',
+                        imgMiddle: '/assets/images/represent/나전_middle.png',
+                        imgSmall: '/assets/images/represent/나전_small.png',
+                        mobileTitle:'2010년 한국의 나전과 칠예전',
+                        title: '한국의 나전과 칠예전',
+                        time: '2010년 4월 8일 - 5월 12일',
+                        place: '이태리 민속박물관',
+                        cooperation: '문화재청, 주한 이탈리아 대사관, 외교통상부, 이탈리아 문화부',
+                    },
+                    {
+                        class: 'fourth',
+                        imgBig: '/assets/images/represent/청자_big.png',
+                        imgMiddle: '/assets/images/represent/청자_middle.png',
+                        imgSmall: '/assets/images/represent/청자_small.png',
+                        mobileTitle:'2009년 강진고려청자 유럽순회전',
+                        title: '강진고려청자 유럽순회전',
+                        time: '2009년 4월 25일 - 5월 6일',
+                        place: '로마 국립 동양 박물관',
+                        cooperation: '이탈리아 문화부, 외교통상부',
+                    },
+                    {
+                        class: 'fifth',
+                        imgBig: '/assets/images/represent/매듭_big.png',
+                        imgMiddle: '/assets/images/represent/매듭_middle.png',
+                        imgSmall: '/assets/images/represent/매듭_small.png',
+                        mobileTitle:'2009년 한국의 매듭전',
+                        title: '한국의 매듭전',
+                        time: '2009년 5월 12일 - 6월 12일',
+                        place: '로마 국립 동양 박물관',
+                        cooperation: '문화체육관광부, 외교통상부, 한국 공예문화 진흥원, 주한 이탈리아 대사관',
+                    },
+                ]
+            each v, i in represents
+                .swiper-slide
+                    section.represent(class=`${v.class}-0${i+1}`)
+                        article.wrap
+                            figure.image-box(class=`${v.class}`)
+                                img(src=`${v.imgBig}`, alt="")
+                            .content-box
+                                .mobile
+                                    .title= v.mobileTitle
+                                .desktop
+                                    .title= v.title
+                                    .time 기간
+                                        span= v.time
+                                    .place 장소
+                                        span= v.place
+                                    .cooperation 
+                                        p 협력기관
+                                        span= v.cooperation
+                                .more more
+                                    img(src="/assets/images/icons/arrow.png", alt="")
+
+            .swiper-slide
+                section.profile
+                    .wrap
+                        h3 정예경 (Jeong Yea-kyung) 
+                            span 대표
+                        .academy -
+                            p 대전 목원대학교 음악교육과 졸업
+                            p 공주사범대학 교육대학원 졸업
+                            p 로마 A.I.D.M 아카데미 / A.R.M 아카데미 / A.R.T 아카데미 디플로마 [성악, 지휘]
+                        .before - 前
+                            p 2008 - 2013 | 주 이탈리아 한인회 문화예술위원장
+                            p 2010 | 대 백제 문화재 홍보대사
+                            p 2010 - 2018 | 원주 한지 홍보대사
+                                span.comment [원주 한지 테마파크와 이태리 파브리아노 박물관 MOU 체결]
+                            p 2012 | 순천 정원 엑스포 홍보대사
+                            p 2013 - 2014 | 문화관광부기획 밀라노 트리엔날레 뮤지엄 전시 기획의원
+                        .now - 現
+                            p K.A.E(카에) Korean Art in Europe 대표
+                            p 국내 외 전시 공연기획
+                        .more more
+                            img(src="/assets/images/icons/arrow.png", alt="")
+                    .footer
+                        | ⓒ Korean art in europe. All rights reserved.
+                    
+        .swiper-pagination

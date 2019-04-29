@@ -7,6 +7,7 @@
 // import './hamburger';
 // import './menu';
 // import './contact';
+import './swiper';
 
 // if ('serviceWorker' in navigator) {
 //     window.addEventListener('load', function () {
