@@ -8,8 +8,10 @@ section.profile {
         // transform: translate(-50%, -60%);
         width: 100%;
         height: 100%;
-        padding: 0 1rem;
-        padding-top: 3rem;
+        padding: 0 1rem 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @media (min-width: 768px) {
             & {
@@ -73,7 +75,7 @@ section.profile {
 
         .more {
             position: absolute;
-            bottom: 5rem;
+            bottom: 70px;
             right: 3rem;
 
             img {
