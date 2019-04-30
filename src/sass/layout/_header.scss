@@ -1,1 +1,36 @@
-header {}
+header.index-header {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem 0.5rem 0;
+
+    & .introduction,
+    & .portfolio {
+        padding: 0 0.7rem;
+        color: #ffffff;
+    }
+
+    @media (min-width: 768px) {
+        & {
+            padding: 2rem 3rem 0;
+
+            & .introduction,
+            & .portfolio {
+                padding: 0 2rem;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        & {
+            padding: 3rem 10rem;
+
+            & .introduction,
+            & .portfolio {
+                padding: 0 2rem;
+            }
+        }
+    }
+}
