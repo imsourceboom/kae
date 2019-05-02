@@ -1,35 +1,84 @@
-header.index-header {
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 1rem 0.5rem 0;
+header {
 
-    & .introduction,
-    & .portfolio {
-        padding: 0 0.7rem;
+    &.index-header,
+    &.logo-header {
+        position: fixed;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 1rem 1rem;
         color: #ffffff;
-    }
 
-    @media (min-width: 768px) {
-        & {
-            padding: 2rem 3rem 0;
+        & .introduction,
+        & .portfolio {
+            padding: 0 0 0 1.5rem;
+        }
 
-            & .introduction,
-            & .portfolio {
-                padding: 0 2rem;
+        @media (min-width: 768px) {
+            & {
+                padding: 2rem 5rem 0;
+
+                & .portfolio {
+                    padding: 0 0 0 4rem;
+                }
+            }
+        }
+
+        @media (min-width: 1400px) {
+            & {
+                padding: 3rem 12rem 1.5rem;
+
+                & .portfolio {
+                    padding: 0 0 0 5rem;
+                }
             }
         }
     }
 
-    @media (min-width: 1400px) {
-        & {
-            padding: 3rem 10rem;
+    &.logo-header {
+        position: relative;
+        color: rgba(0, 0, 0, 1);
+        border-bottom: 1px solid rgba(0, 0, 0, .5);
+        padding: 1rem 0;
 
-            & .introduction,
-            & .portfolio {
-                padding: 0 2rem;
+        figure {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0rem;
+
+            img {
+                width: 50px;
+                object-fit: contain;
+            }
+        }
+
+        @media (min-width: 768px) {
+            & {
+                padding: 2rem 0rem 1.5rem;
+
+                figure {
+                    top: 60%;
+
+                    img {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 1400px) {
+            & {
+                padding: 3rem 0rem 1.5rem;
+
+                figure {
+                    top: 65%;
+
+                    img {
+                        width: 70px;
+                    }
+                }
             }
         }
     }

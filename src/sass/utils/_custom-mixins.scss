@@ -1,0 +1,20 @@
+@mixin sectionContainer() {
+
+    &.container {
+        min-height: 100vh;
+        background-color: rgba(247, 243, 230, 1);
+        padding: 80px 1rem;
+
+        @media (min-width: 768px) {
+            & {
+                padding: 110px 5rem;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            & {
+                padding: 130px 12rem;
+            }
+        }
+    }
+}

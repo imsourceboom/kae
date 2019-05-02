@@ -1,5 +1,6 @@
 @import 'utils/var',
-'utils/mixins';
+'utils/mixins',
+'utils/custom-mixins';
 
 @import 'base/reset',
 'base/typography',
@@ -9,4 +10,5 @@
 'layout/main',
 'layout/footer';
 
-@import 'section/index/index';
+@import 'section/index/index',
+'section/introduction/index';
