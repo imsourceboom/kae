@@ -1,13 +1,11 @@
 // import './httpTohttps';
-// import './intro';
-// import './sticky';
-// import './typed';
 // import './smoothscroll';
 // import './scrollreveal';
-// import './hamburger';
 // import './menu';
 // import './contact';
 import './swiper';
+import './hamburger';
+import './header';
 
 // if ('serviceWorker' in navigator) {
 //     window.addEventListener('load', function () {

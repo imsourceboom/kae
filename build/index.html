@@ -25,22 +25,48 @@
     <script src="/js/app.js" defer></script>
   </head>
   <body>
+    <header>
+      <div class="container">
+        <figure class="logo"><a href="/index.html"><img src="/assets/images/logo.png" alt=""></a></figure>
+        <nav>
+          <ul>
+            <li>
+              <div class="about--us"><a href="/html/introduction.html">about us</a></div>
+            </li>
+            <li>
+              <div class="italian"><a href="">Italian portfolio</a></div>
+            </li>
+            <li>
+              <div class="korean"><a href="">Korean portfolio</a></div>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger hamburger--squeeze js-hamburger">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <header class="index-header">
-        <div class="introduction"> <a href="/html/introduction.html">introduction</a></div>
-        <div class="portfolio"> <a href="">portfolio</a></div>
-      </header>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <section class="intro">
               <article>
-                <div class="title">KAE</div>
-                <hr>
-                <div class="description">
-                  Korean<br>
-                  Art in<br>
-                  Europe
+                <div class="wrap name">
+                  <div class="box">
+                    <figure><img src="/assets/images/logo.png" alt="">
+                      <figcaption>[카에]</figcaption>
+                    </figure>
+                    <p>Korean Art in Europe</p>
+                  </div>
+                </div>
+                <div class="wrap flag">
+                  <div class="box">
+                    <figure><a href=""><img src="/assets/images/flags/italy-flag.png" alt="italy flag"></a></figure>
+                    <figure><a href=""><img src="/assets/images/flags/korea-flag.png" alt="korea flag"></a></figure>
+                  </div>
                 </div>
               </article>
             </section>
@@ -48,7 +74,28 @@
           <div class="swiper-slide">
             <section class="represent first-01">
               <article class="wrap">
-                <figure class="image-box first"><img src="/assets/images/represent/muhyoung_big.png" alt=""></figure>
+                <figure class="image-box first"><img src="/assets/images/represent/domus.png" alt=""></figure>
+                <div class="content-box">
+                  <div class="mobile">
+                    <div class="title">밀라노 트리엔날레 뮤지엄</div>
+                  </div>
+                  <div class="desktop">
+                    <div class="title">밀라노 트리엔날레 뮤지엄 한국관 전시 [기획의원]</div>
+                    <div class="time">기간<span>2014년 4월 8일 - 4월 13일</span></div>
+                    <div class="place">장소<span>이태리 밀라노 트리엔날레 뮤지엄</span></div>
+                    <div class="cooperation"> 
+                      <p>협력기관</p><span>문화관광 체육부, 주이탈리아 대사관</span>
+                    </div>
+                  </div>
+                  <div class="more">MORE<img src="/assets/images/icons/arrow.png" alt=""></div>
+                </div>
+              </article>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="represent second-02">
+              <article class="wrap">
+                <figure class="image-box second"><img src="/assets/images/represent/muhyoung_big.png" alt=""></figure>
                 <div class="content-box">
                   <div class="mobile">
                     <div class="title">2013년 서울시 무형 문화재</div>
@@ -61,15 +108,15 @@
                       <p>협력기관</p><span>서울시, 서울시 무형문화재단, 문화관광 체육부, 이태리 문화관광부, 주한 이탈리아 대사관</span>
                     </div>
                   </div>
-                  <div class="more">more<img src="/assets/images/icons/arrow.png" alt=""></div>
+                  <div class="more">MORE<img src="/assets/images/icons/arrow.png" alt=""></div>
                 </div>
               </article>
             </section>
           </div>
           <div class="swiper-slide">
-            <section class="represent second-02">
+            <section class="represent third-03">
               <article class="wrap">
-                <figure class="image-box second"><img src="/assets/images/represent/hanji_big.png" alt=""></figure>
+                <figure class="image-box third"><img src="/assets/images/represent/hanji_big.png" alt=""></figure>
                 <div class="content-box">
                   <div class="mobile">
                     <div class="title">2011년 한지 전시회</div>
@@ -82,15 +129,15 @@
                       <p>협력기관</p><span>원주 한지개발원, 원주 한지테마파크, 원주시, 강원도, 주한 이탈리아 대사관</span>
                     </div>
                   </div>
-                  <div class="more">more<img src="/assets/images/icons/arrow.png" alt=""></div>
+                  <div class="more">MORE<img src="/assets/images/icons/arrow.png" alt=""></div>
                 </div>
               </article>
             </section>
           </div>
           <div class="swiper-slide">
-            <section class="represent third-03">
+            <section class="represent fourth-04">
               <article class="wrap">
-                <figure class="image-box third"><img src="/assets/images/represent/najeon_big.png" alt=""></figure>
+                <figure class="image-box fourth"><img src="/assets/images/represent/najeon_big.png" alt=""></figure>
                 <div class="content-box">
                   <div class="mobile">
                     <div class="title">2010년 한국의 나전과 칠예전</div>
@@ -103,15 +150,15 @@
                       <p>협력기관</p><span>문화재청, 주한 이탈리아 대사관, 외교통상부, 이탈리아 문화부</span>
                     </div>
                   </div>
-                  <div class="more">more<img src="/assets/images/icons/arrow.png" alt=""></div>
+                  <div class="more">MORE<img src="/assets/images/icons/arrow.png" alt=""></div>
                 </div>
               </article>
             </section>
           </div>
           <div class="swiper-slide">
-            <section class="represent fourth-04">
+            <section class="represent fifth-05">
               <article class="wrap">
-                <figure class="image-box fourth"><img src="/assets/images/represent/cheongja_big.png" alt=""></figure>
+                <figure class="image-box fifth"><img src="/assets/images/represent/cheongja_big.png" alt=""></figure>
                 <div class="content-box">
                   <div class="mobile">
                     <div class="title">2009년 강진고려청자 유럽순회전</div>
@@ -124,15 +171,15 @@
                       <p>협력기관</p><span>이탈리아 문화부, 외교통상부</span>
                     </div>
                   </div>
-                  <div class="more">more<img src="/assets/images/icons/arrow.png" alt=""></div>
+                  <div class="more">MORE<img src="/assets/images/icons/arrow.png" alt=""></div>
                 </div>
               </article>
             </section>
           </div>
           <div class="swiper-slide">
-            <section class="represent fifth-05">
+            <section class="represent sixth-06">
               <article class="wrap">
-                <figure class="image-box fifth"><img src="/assets/images/represent/maedeup_big.png" alt=""></figure>
+                <figure class="image-box sixth"><img src="/assets/images/represent/maedeup_big.png" alt=""></figure>
                 <div class="content-box">
                   <div class="mobile">
                     <div class="title">2009년 한국의 매듭전</div>
@@ -145,7 +192,7 @@
                       <p>협력기관</p><span>문화체육관광부, 외교통상부, 한국 공예문화 진흥원, 주한 이탈리아 대사관</span>
                     </div>
                   </div>
-                  <div class="more">more<img src="/assets/images/icons/arrow.png" alt=""></div>
+                  <div class="more">MORE<img src="/assets/images/icons/arrow.png" alt=""></div>
                 </div>
               </article>
             </section>
@@ -153,24 +200,9 @@
           <div class="swiper-slide">
             <section class="profile">
               <div class="wrap">
-                <h3>정예경 (Jeong Yea-kyung) <span>대표</span></h3>
-                <div class="academy">-
-                  <p>대전 목원대학교 음악교육과 졸업</p>
-                  <p>공주사범대학 교육대학원 졸업</p>
-                  <p>로마 A.I.D.M 아카데미 / A.R.M 아카데미 / A.R.T 아카데미 디플로마 [성악, 지휘]</p>
-                </div>
-                <div class="before">- 前
-                  <p>2008 - 2013 | 주 이탈리아 한인회 문화예술위원장</p>
-                  <p>2010 | 대 백제 문화재 홍보대사</p>
-                  <p>2010 - 2018 | 원주 한지 홍보대사<span class="comment">[원주 한지 테마파크와 이태리 파브리아노 박물관 MOU 체결]</span></p>
-                  <p>2012 | 순천 정원 엑스포 홍보대사</p>
-                  <p>2013 - 2014 | 문화관광부기획 밀라노 트리엔날레 뮤지엄 전시 기획의원</p>
-                </div>
-                <div class="now">- 現
-                  <p>K.A.E(카에) Korean Art in Europe 대표</p>
-                  <p>국내 외 전시 공연기획</p>
-                </div>
-                <div class="more">more<img src="/assets/images/icons/arrow.png" alt=""></div>
+                <p class="name">정예경 (Jeong Yea-kyung)</p>
+                <p class="position">K.A.E [카에] Korean Art in Europe 대표</p>
+                <div class="more">MORE<img src="/assets/images/icons/arrow.png" alt=""></div>
               </div>
               <div class="footer">ⓒ Korean art in europe. All rights reserved.</div>
             </section>

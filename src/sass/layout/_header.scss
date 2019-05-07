@@ -1,86 +1,121 @@
 header {
     font-family: "Noto Sans Kr", sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: rgba(255, 30, 142, 1);
+    // border: 1px solid blue;
 
-    &.index-header,
-    &.logo-header {
-        position: fixed;
-        z-index: 2;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        padding: 1rem 1rem;
-        color: #ffffff;
 
-        & .introduction,
-        & .portfolio {
-            padding: 0 0 0 1.5rem;
-        }
-
-        @media (min-width: 768px) {
-            & {
-                padding: 2rem 5rem 0;
-
-                & .portfolio {
-                    padding: 0 0 0 4rem;
-                }
-            }
-        }
-
-        @media (min-width: 1400px) {
-            & {
-                padding: 3rem 12rem 1.5rem;
-
-                & .portfolio {
-                    padding: 0 0 0 5rem;
-                }
-            }
-        }
-    }
-
-    &.logo-header {
+    .container {
         position: relative;
-        color: rgba(0, 0, 0, 1);
-        border-bottom: 1px solid rgba(0, 0, 0, .5);
-        padding: 1rem 0;
+        width: 100%;
+        max-width: 1200px;
+        height: 60px;
+        padding: 0 1rem;
+        // border: 1px solid orangered;
+        display: flex;
+        justify-content: center;
 
-        figure {
+        @media (min-width: 1024px) {
+            & {
+                height: 80px;
+            }
+        }
+
+        figure.logo {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
-            left: 0rem;
+            left: 1rem;
+            transform: translate(0, -50%);
+            z-index: 2;
+
+            @media (min-width: 1024px) {
+                & {
+
+                    &.none {
+                        display: none;
+                    }
+                }
+            }
 
             img {
                 width: 50px;
-                object-fit: contain;
-            }
-        }
 
-        @media (min-width: 768px) {
-            & {
-                padding: 2rem 0rem 1.5rem;
+                @media (min-width: 1024px) {
+                    & {
+                        width: 100px;
 
-                figure {
-                    top: 60%;
-
-                    img {
-                        width: 60px;
                     }
                 }
             }
         }
 
-        @media (min-width: 1400px) {
-            & {
-                padding: 3rem 0rem 1.5rem;
+        nav {
+            position: absolute;
+            // top: 60px;
+            width: 100%;
+            // border: 1px solid green;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: 0.7s;
 
-                figure {
-                    top: 65%;
+            &.active {
 
-                    img {
-                        width: 70px;
+                transform: scaleY(1);
+            }
+
+            ul {
+                padding-top: 60px;
+                background-color: #f8f3e6;
+                text-align: center;
+
+                @include media(mobile-only) {
+                    & {
+                        color: rgba(255, 30, 142, 1);
+                    }
+                }
+
+                li {
+                    padding: 1rem 0;
+
+                    &:last-child {
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+
+
+            @media (min-width: 1024px) {
+                & {
+                    position: relative;
+                    top: 0;
+                    width: 700px;
+                    transform: none;
+
+                    ul {
+                        padding-top: 0;
+                        text-align: initial;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, .0);
+
+                        li {
+                            padding: 0;
+
+                            &:last-child {
+                                padding-bottom: 0;
+                            }
+                        }
                     }
                 }
             }
         }
     }
+
 }

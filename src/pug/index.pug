@@ -1,7 +1,7 @@
 extends ./_layout
 
 block main
-    include layout/index-header
+    //- include layout/index-header
     .swiper-container
         .swiper-wrapper
             .swiper-slide
@@ -11,6 +11,17 @@ block main
                 var represents = [
                     {
                         class: 'first',
+                        imgBig: '/assets/images/represent/domus.png',
+                        //- imgMiddle: '/assets/images/represent/muhyoung_middle.png',
+                        //- imgSmall: '/assets/images/represent/muhyoung_small.png',
+                        mobileTitle:'밀라노 트리엔날레 뮤지엄',
+                        title: '밀라노 트리엔날레 뮤지엄 한국관 전시 [기획의원]',
+                        time: '2014년 4월 8일 - 4월 13일',
+                        place: '이태리 밀라노 트리엔날레 뮤지엄',
+                        cooperation: '문화관광 체육부, 주이탈리아 대사관',
+                    },
+                    {
+                        class: 'second',
                         imgBig: '/assets/images/represent/muhyoung_big.png',
                         imgMiddle: '/assets/images/represent/muhyoung_middle.png',
                         imgSmall: '/assets/images/represent/muhyoung_small.png',
@@ -21,7 +32,7 @@ block main
                         cooperation: '서울시, 서울시 무형문화재단, 문화관광 체육부, 이태리 문화관광부, 주한 이탈리아 대사관',
                     },
                     {
-                        class: 'second',
+                        class: 'third',
                         imgBig: '/assets/images/represent/hanji_big.png',
                         imgMiddle: '/assets/images/represent/hanji_middle.png',
                         imgSmall: '/assets/images/represent/hanji_small.png',
@@ -32,7 +43,7 @@ block main
                         cooperation: '원주 한지개발원, 원주 한지테마파크, 원주시, 강원도, 주한 이탈리아 대사관',
                     },
                     {
-                        class: 'third',
+                        class: 'fourth',
                         imgBig: '/assets/images/represent/najeon_big.png',
                         imgMiddle: '/assets/images/represent/najeon_middle.png',
                         imgSmall: '/assets/images/represent/najeon_small.png',
@@ -43,7 +54,7 @@ block main
                         cooperation: '문화재청, 주한 이탈리아 대사관, 외교통상부, 이탈리아 문화부',
                     },
                     {
-                        class: 'fourth',
+                        class: 'fifth',
                         imgBig: '/assets/images/represent/cheongja_big.png',
                         imgMiddle: '/assets/images/represent/cheongja_middle.png',
                         imgSmall: '/assets/images/represent/cheongja_small.png',
@@ -54,7 +65,7 @@ block main
                         cooperation: '이탈리아 문화부, 외교통상부',
                     },
                     {
-                        class: 'fifth',
+                        class: 'sixth',
                         imgBig: '/assets/images/represent/maedeup_big.png',
                         imgMiddle: '/assets/images/represent/maedeup_middle.png',
                         imgSmall: '/assets/images/represent/maedeup_small.png',
@@ -83,7 +94,7 @@ block main
                                     .cooperation 
                                         p 협력기관
                                         span= v.cooperation
-                                .more more
+                                .more MORE
                                     img(src="/assets/images/icons/arrow.png", alt="")
 
             .swiper-slide

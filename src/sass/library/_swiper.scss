@@ -3,8 +3,16 @@
     height: 100vh;
 
     .swiper-wrapper {
+
         .swiper-slide>section {
+            padding-top: 60px;
             height: 100%;
+
+            @media (min-width: 1024px) {
+                & {
+                    padding-top: 80px;
+                }
+            }
         }
     }
 
