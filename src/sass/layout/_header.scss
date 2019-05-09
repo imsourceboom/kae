@@ -7,6 +7,7 @@ header {
     justify-content: center;
     width: 100%;
     color: rgba(255, 30, 142, 1);
+    transition: .3s;
     // border: 1px solid blue;
 
 
@@ -20,7 +21,7 @@ header {
         display: flex;
         justify-content: center;
 
-        @media (min-width: 1024px) {
+        @media (min-width: 1400px) {
             & {
                 height: 80px;
             }

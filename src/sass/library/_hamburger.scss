@@ -96,4 +96,16 @@ $hamburger-types: (3dx,
             display: none;
         }
     }
+
+    &.white {
+        .hamburger-box {
+
+            .hamburger-inner,
+            .hamburger-inner::before,
+            .hamburger-inner::after {
+                background-color: white;
+            }
+        }
+
+    }
 }
