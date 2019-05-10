@@ -7,14 +7,22 @@
 
         @media (min-width: 768px) {
             & {
-                padding: 110px 5rem;
+                padding: 110px 1rem;
             }
         }
 
         @media (min-width: 1400px) {
             & {
-                padding: 130px 12rem;
+                padding: 130px 1rem;
             }
         }
+    }
+}
+
+@mixin wrap-1200() {
+    .wrap {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
     }
 }

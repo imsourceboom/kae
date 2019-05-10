@@ -1,12 +1,23 @@
 import {
     header,
     swiper,
-    aboutUs
+    aboutUs,
+    italy,
+    korea
 } from '../elements';
 
+// about
 const about = aboutUs.self;
 const introduce = aboutUs.introduce;
 const history = aboutUs.history;
+
+// italy
+const italySection = italy.self;
+
+// korea
+const koreaSection = korea.self;
+
+// Header
 const headerSelf = header.self;
 const hamburger = header.hamburger;
 const logo = header.logo;
@@ -41,15 +52,11 @@ if (swiperContainer === null) {
     headerSelf.style.backgroundColor = '#f8f3e6';
 }
 
-console.log(logo);
-console.log(logo.innerHTML.value);
-
 
 
 /*
     About Page
 */
-
 if (about !== null) {
     headerSelf.style.backgroundColor = 'rgba(255,255,255,0)';
     headerSelf.style.color = 'rgba(255,255,255,1)';
@@ -62,7 +69,7 @@ if (about !== null) {
         const introduceTop = introduce.getBoundingClientRect().top;
         console.log(introduceTop);
 
-        if (introduceTop <= 0 && introduceTop >= -100) {
+        if (introduceTop < 0 && introduceTop >= -100) {
             headerSelf.style.backgroundColor = 'rgba(0,0,0,.66)';
         } else if (introduceTop == 0) {
             headerSelf.style.backgroundColor = 'rgba(0,0,0,0)';
@@ -74,9 +81,20 @@ if (about !== null) {
             logo.innerHTML = logoPink;
             hamburger.classList.remove('white');
         } else if (historyTop >= 41 && historyTop <= 80) {
+            headerSelf.style.backgroundColor = 'rgba(0,0,0,.66)';
             headerSelf.style.color = 'rgba(255, 255,255,1)';
             logo.innerHTML = logoWhite;
             hamburger.classList.add('white');
         }
     })
+}
+
+
+
+/*
+    italy, Korea Page
+*/
+
+if (italySection !== null || koreaSection !== null) {
+    logo.innerHTML = logoPink;
 }

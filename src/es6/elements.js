@@ -24,6 +24,14 @@ export const aboutUs = {
     history: doc.querySelector('section.about-us > article.history'),
 }
 
+export const italy = {
+    self: doc.querySelector('body > main > section.italy'),
+}
+
+export const korea = {
+    self: doc.querySelector('body > main > section.korea')
+}
+
 export const swiper = {
     container: doc.querySelector('body > main > .swiper-container'),
     wrapper: doc.querySelector('.swiper-container > .swiper-wrapper'),
