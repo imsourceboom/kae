@@ -26,6 +26,10 @@ section.intro {
                         display: flex;
                         align-items: center;
 
+                        img {
+                            width: 100px;
+                        }
+
                         figcaption {
                             font-size: 30px;
                             font-weight: bolder;
