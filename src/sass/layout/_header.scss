@@ -133,7 +133,7 @@ header {
                 width: 26px;
                 height: 26px;
                 overflow: hidden;
-                margin: 0 .5rem;
+                margin: 0 .75rem;
                 border-radius: 100%;
 
                 img {
@@ -163,6 +163,10 @@ header {
         }
 
         .translate-mobile {
+            a {
+                margin: 0 1rem;
+            }
+
             @media (min-width: 1024px) {
                 & {
                     display: none;
@@ -173,7 +177,7 @@ header {
         .translate-desk {
             position: absolute;
             top: 50%;
-            right: 1rem;
+            right: .5rem;
             transform: translateY(-50%);
 
             @media (max-width: 1023px) {
@@ -184,7 +188,7 @@ header {
 
             @media (min-width: 1400px) {
                 & {
-                    right: 2rem;
+                    right: 1rem;
                 }
             }
         }
