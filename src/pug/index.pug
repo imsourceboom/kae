@@ -19,6 +19,7 @@ block main
                         time: '2014년 4월 8일 - 4월 13일',
                         place: '이태리 밀라노 트리엔날레 뮤지엄',
                         cooperation: '문화관광 체육부, 주이탈리아 대사관',
+                        link: '/html/italy/2014.html',
                     },
                     {
                         class: 'second',
@@ -28,6 +29,7 @@ block main
                         time: '2013년 4월 9일 - 4월 14일',
                         place: '이태리 밀라노 트리엔날레 뮤지엄',
                         cooperation: '문화관광 체육부, 주이탈리아 대사관',
+                        link: '/html/italy/2013.html',
                     },
                     {
                         class: 'third',
@@ -39,6 +41,7 @@ block main
                         time: '2013년 5월 14일 - 7월 14일',
                         place: '이태리 로마 국립 동양 민속 박물관',
                         cooperation: '서울시, 서울시 무형문화재단, 문화관광 체육부, 이태리 문화관광부, 주한 이탈리아 대사관',
+                        link: '/html/italy/muhyoung.html',
                     },
                     {
                         class: 'fourth',
@@ -50,6 +53,7 @@ block main
                         time: '2011년 6월 9일 - 8월 7일',
                         place: '이태리 국립 민속 박물관',
                         cooperation: '원주 한지개발원, 원주 한지테마파크, 원주시, 강원도, 주한 이탈리아 대사관',
+                        link: '/html/italy/hanji.html',
                     },
                     {
                         class: 'fifth',
@@ -61,6 +65,7 @@ block main
                         time: '2010년 4월 8일 - 5월 12일',
                         place: '이태리 민속박물관',
                         cooperation: '문화재청, 주한 이탈리아 대사관, 외교통상부, 이탈리아 문화부',
+                        link: '/html/italy/najeon.html',
                     },
                     {
                         class: 'sixth',
@@ -72,6 +77,7 @@ block main
                         time: '2009년 4월 25일 - 5월 6일',
                         place: '로마 국립 동양 박물관',
                         cooperation: '이탈리아 문화부, 외교통상부',
+                        link: '/html/italy/cheongja.html',
                     },
                     {
                         class: 'seventh',
@@ -83,6 +89,7 @@ block main
                         time: '2009년 5월 12일 - 6월 12일',
                         place: '로마 국립 동양 박물관',
                         cooperation: '문화체육관광부, 외교통상부, 한국 공예문화 진흥원, 주한 이탈리아 대사관',
+                        link: '/html/italy/maedeup.html',
                     },
                 ]
             each v, i in represents
@@ -103,8 +110,9 @@ block main
                                     .cooperation 
                                         p 협력기관
                                         span= v.cooperation
-                                .more MORE
-                                    img(src="/assets/images/icons/arrow.png", alt="")
+                                a(href=`${v.link}`)
+                                    .more MORE
+                                        img(src="/assets/images/icons/arrow.png", alt="")
 
             .swiper-slide
                 include section/index/profile
