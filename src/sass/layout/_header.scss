@@ -24,6 +24,7 @@ header {
         @media (min-width: 1400px) {
             & {
                 height: 80px;
+                // padding: 0;
             }
         }
 
@@ -43,6 +44,12 @@ header {
                 }
             }
 
+            // @media (min-width: 1400px) {
+            //     & {
+            //         left: 0;
+            //     }
+            // }
+
             img {
                 width: 50px;
 
@@ -52,6 +59,8 @@ header {
 
                     }
                 }
+
+
             }
         }
 

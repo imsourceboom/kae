@@ -1,0 +1,40 @@
+extends ../../_layout
+
+block main
+    section.detail.container.roma
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/korea/roma/title.png", alt="")
+                .contents
+                    .box
+                        .title 이탈리아 나폴리타노 대통령 한국방문기념 전시회 [로마&서울&로마]
+                        .time 기간
+                            span 2009년 7월 16일 - 8월 16일
+                        .place 장소
+                            span 성신여자 대학교
+                        .cooperation
+                            p 협력기관
+                            span
+                                | 성신여대, 라치오주, 외교통상부, 주한 이탈리아 대사관,
+                                | 주한 이탈리아 문화원
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                                comment: '▴ (전) 마씨모 레제리 이탈리아 댓사, 성신여대 총장, 이탈리아 민속 박물관장'
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/korea/roma/${image.img}.png`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.

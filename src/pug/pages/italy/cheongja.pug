@@ -1,0 +1,38 @@
+extends ../../_layout
+
+block main
+    section.detail.container.cheongja
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/gallery/cheongja_middle.png", alt="")
+                .contents
+                    .box
+                        .title 2009년 강진고려청자 유럽순회전
+                        .time 기간
+                            span 2009년 4월 25일 - 5월 6일
+                        .place 장소
+                            span 로마 국립 동양 박물관
+                        .cooperation
+                            p 협력기관
+                            span 이탈리아 문화부, 외교통상부
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/cheongja/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
+

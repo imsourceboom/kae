@@ -19,10 +19,10 @@
     }
 }
 
-@mixin wrap-1200() {
+@mixin maxWrap($width) {
     .wrap {
         width: 100%;
-        max-width: 1000px;
+        max-width: $width;
         margin: 0 auto;
     }
 }

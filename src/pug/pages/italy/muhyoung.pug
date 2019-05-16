@@ -1,0 +1,43 @@
+extends ../../_layout
+
+block main
+    section.detail.container.muhyoung
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/gallery/muhyoung_middle.png", alt="")
+                .contents
+                    .box
+                        .title 2013 서울시 무형 문화재
+                        .time 기간
+                            span 2013년 5월 14일 - 7월 14일
+                        .place 장소
+                            span 이태리 로마 국립 동양 민속 박물관
+                        .cooperation
+                            p 협력기관
+                            span 
+                                | 서울시, 서울시 무형문화재단, 문화관광 체육부,
+                                | <br/>이태리 문화관광부, 주한 이탈리아 대사관
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                                comment: '▴ 이탈리아 신문에 광고 되었던 사진'
+                            },
+                            {
+                                img: '2',
+                                comment: '▴ 행사중인 사진'
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/muhyoung/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
+            
+

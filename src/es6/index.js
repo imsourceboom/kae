@@ -6,6 +6,7 @@
 import './swiper';
 import './hamburger';
 import './header';
+import './masonry';
 
 // if ('serviceWorker' in navigator) {
 //     window.addEventListener('load', function () {

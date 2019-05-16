@@ -1,0 +1,123 @@
+extends ../../_layout
+
+block main
+    section.detail.container.vocal
+        .wrap
+            .description
+                h1
+                    | 2010 - 2014년 재이 한국대사관 후원 한국 성악가 이탈리아 도시 순회 연주회
+            .masonry
+                .grid
+                    .grid-sizer
+                    .grid-item.grid-item--100
+                        h4
+                            | 2010년 재이 한국대사관 후원 한국 성악가 이탈리아 5개 도시 순회 연주회
+                    -
+                        var images = [
+                            {
+                                img: '2010-1',
+                            },
+                            {
+                                img: '2010-2',
+                            },
+                            {
+                                img: '2010-3',
+                            },
+                            {
+                                img: '2010-4',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/vocal/${image.img}.png`, alt="")
+                            p= image.comment
+                    .grid-item.grid-item--100.m-top
+                        h4
+                            | 2011년 재이 한국대사관 후원 한국 성악가 이탈리아 8개 도시 순회 연주회
+                    -
+                        var images = [
+                            {
+                                img: '2011-1',
+                            },
+                            {
+                                img: '2011-2',
+                            },
+                            {
+                                img: '2011-3',
+                            },
+                            {
+                                img: '2011-4',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/vocal/${image.img}.png`, alt="")
+                            p= image.comment
+                    .grid-item.grid-item--100.m-top
+                        h4
+                            | 2012년 재이 한국대사관 후원 한국 성악가 이탈리아 4개 도시 순회 연주회
+                    -
+                        var images = [
+                            {
+                                img: '2012-1',
+                            },
+                            {
+                                img: '2012-2',
+                            },
+                            {
+                                img: '2012-3',
+                            },
+                            {
+                                img: '2012-4',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/vocal/${image.img}.png`, alt="")
+                            p= image.comment
+                    .grid-item.grid-item--100.m-top
+                        h4
+                            | 2013년 재이 한국대사관 후원 한국 성악가 이탈리아 5개 도시 순회 연주회 - 배재현 대사님과 함께
+                    -
+                        var images = [
+                            {
+                                img: '2011-1',
+                            },
+                            {
+                                img: '2011-2',
+                            },
+                            {
+                                img: '2011-3',
+                            },
+                            {
+                                img: '2011-4',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/vocal/${image.img}.png`, alt="")
+                            p= image.comment
+                    .grid-item.grid-item--100.m-top
+                        h4
+                            | 2014년 재이 한국대사관 후원 한국 성악가 이탈리아 5개 도시 순회 연주회
+                    -
+                        var images = [
+                            {
+                                img: '2014-1',
+                            },
+                            {
+                                img: '2014-2',
+                            },
+                            {
+                                img: '2014-3',
+                            },
+                            {
+                                img: '2014-4',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/vocal/${image.img}.png`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.

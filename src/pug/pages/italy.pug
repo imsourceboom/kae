@@ -9,47 +9,57 @@ block main
                 -
                     var gallerys = [
                         {
+                            link: '2014',
                             img: '/assets/images/italy/gallery/2014.png',
                             titleTop: '2014 밀라노 트리엔날레',
                             titleBottom: '뮤지엄 한국관 전시 [기획의원]'
                         },
                         {
+                            link: '2013',
                             img: '/assets/images/italy/gallery/2013.png',
                             titleTop: '2013 밀라노 트리엔날레',
                             titleBottom: '뮤지엄 한국관 전시 [기획의원]'
                         },
                         {
+                            link: 'muhyoung',
                             img: '/assets/images/italy/gallery/muhyoung_middle.png',
                             titleTop: '서울시 무형 문화재',
                         },
                         {
+                            link: 'hanji',
                             img: '/assets/images/italy/gallery/hanji_middle.png',
                             titleTop: '한지 전시회',
                         },
                         {
+                            link: 'najeon',
                             img: '/assets/images/italy/gallery/najeon_middle.png',
                             titleTop: '한국의 나전과 칠예전',
                         },
                         {
+                            link: 'cheongja',
                             img: '/assets/images/italy/gallery/cheongja_middle.png',
                             titleTop: '2009년 강진고려청자',
                             titleBottom: '유럽순회전'
                         },
                         {
+                            link: 'maedeup',
                             img: '/assets/images/italy/gallery/maedeup_middle.png',
                             titleTop: '한국의 매듭전',
                         },
                         {
+                            link: 'concert',
                             img: '/assets/images/italy/gallery/concert.png',
                             titleTop: '콘서트와 한국 전통',
                             titleBottom: '공예 전시회'
                         },
                         {
+                            link: 'vocal',
                             img: '/assets/images/italy/gallery/vocal.png',
                             titleTop: '2010-2014년 재이 한국대사관 후원',
                             titleBottom: '한국 성악가 이탈리아 도시 순회 연주회'
                         },
                         {
+                            link: 'antonio',
                             img: '/assets/images/italy/gallery/antonio.png',
                             titleTop: '"안토니오 파올루찌"',
                             titleBottom: '바티칸 박물관 관장님과 함께'
@@ -58,7 +68,7 @@ block main
                 each g in gallerys
                     li
                         figure
-                            a(href="")
+                            a(href=`/html/italy/${g.link}.html`)
                                 img(src=`${g.img}`, alt="")
                                 figcaption= g.titleTop
                                     p= g.titleBottom

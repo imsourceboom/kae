@@ -1,0 +1,41 @@
+extends ../../_layout
+
+block main
+    section.detail.container.concert
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/concert/title.jpg", alt="")
+                .contents
+                    .box
+                        .title 2010 콘서트와 한국 전통 공예 전시회
+                        .time 기간
+                            span 2010년 9월 30일
+                        .place 장소
+                            span
+                        .cooperation
+                            p 협력기관
+                            span
+                                | 이탈리아 문화부
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                            },
+                            {
+                                img: '3',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/concert/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.

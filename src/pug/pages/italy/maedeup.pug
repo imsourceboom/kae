@@ -1,0 +1,52 @@
+extends ../../_layout
+
+block main
+    section.detail.container.maedeup
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/gallery/maedeup_middle.png", alt="")
+                .contents
+                    .box
+                        .title 2009년 한국의 매듭전
+                        .time 기간
+                            span 2009년 5월 12일 - 6월 12일
+                        .place 장소
+                            span 로마 국립 동양 박물관
+                        .cooperation
+                            p 협력기관
+                            span
+                                | 문화체육관광부, 외교통상부, 한국 공예문화 진흥원,
+                                | <br/>주한 이탈리아 대사관
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                                comment: '▴ 김중재 대사, 이태리 박물관장'
+                            },
+                            {
+                                img: '2',
+                            },
+                            {
+                                img: '3',
+                            },
+                            {
+                                img: '4',
+                            },
+                            {
+                                img: '5',
+                            },
+                            {
+                                img: '6',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/maedeup/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.

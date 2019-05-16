@@ -3,7 +3,8 @@ import {
     swiper,
     aboutUs,
     italy,
-    korea
+    korea,
+    detail
 } from '../elements';
 
 // about
@@ -12,10 +13,13 @@ const introduce = aboutUs.introduce;
 const history = aboutUs.history;
 
 // italy
-const italySection = italy.self;
+const italyPortfolio = italy.self;
 
 // korea
-const koreaSection = korea.self;
+const koreaPortfolio = korea.self;
+
+// detail
+const detailPage = detail.self;
 
 // Header
 const headerSelf = header.self;
@@ -23,12 +27,12 @@ const hamburger = header.hamburger;
 const logo = header.logo;
 
 const logoPink = `
-    <a href="/index.html">
+    <a href="/">
         <img src="/assets/images/logo.png" alt="logo"/>
     </a>
 `;
 const logoWhite = `
-    <a href="/index.html">
+    <a href="/">
         <img src="/assets/images/logo-white.png" alt="logo"/>
     </a>
 `;
@@ -37,12 +41,9 @@ const swiperContainer = swiper.container;
 // const swiperWrapper = swiper.wrapper;
 // const swiperSlide = Array.from(swiper.slide);
 
-
-
 /*
     index Page
 */
-
 if (swiperContainer !== null) {
     logo.classList.add('none');
     logo.innerHTML = logoPink;
@@ -51,8 +52,6 @@ if (swiperContainer !== null) {
 if (swiperContainer === null) {
     headerSelf.style.backgroundColor = '#f8f3e6';
 }
-
-
 
 /*
     About Page
@@ -67,7 +66,7 @@ if (about !== null) {
     document.addEventListener('scroll', function () {
         const historyTop = history.getBoundingClientRect().top;
         const introduceTop = introduce.getBoundingClientRect().top;
-        console.log(introduceTop);
+        // console.log(introduceTop);
 
         if (introduceTop < 0 && introduceTop >= -100) {
             headerSelf.style.backgroundColor = 'rgba(0,0,0,.66)';
@@ -86,15 +85,20 @@ if (about !== null) {
             logo.innerHTML = logoWhite;
             hamburger.classList.add('white');
         }
-    })
+    });
 }
-
-
 
 /*
     italy, Korea Page
 */
+if (italyPortfolio !== null || koreaPortfolio !== null) {
+    logo.innerHTML = logoPink;
+}
 
-if (italySection !== null || koreaSection !== null) {
+
+/*
+    detail Page
+*/
+if (detailPage !== null) {
     logo.innerHTML = logoPink;
 }

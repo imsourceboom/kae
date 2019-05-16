@@ -32,10 +32,19 @@ export const korea = {
     self: doc.querySelector('body > main > section.korea')
 }
 
+export const detail = {
+    self: doc.querySelector('body > main > section.detail')
+}
+
 export const swiper = {
     container: doc.querySelector('body > main > .swiper-container'),
     wrapper: doc.querySelector('.swiper-container > .swiper-wrapper'),
     slide: doc.querySelectorAll('.swiper-container > .swiper-wrapper .swiper-slide')
+}
+
+export const grid = {
+    self: doc.querySelector('.grid'),
+    img: doc.querySelectorAll('.grid-item > img')
 }
 
 console.log('Webpack On!!');

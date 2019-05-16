@@ -1,0 +1,27 @@
+extends ../../_layout
+
+block main
+    section.detail.container.antonio
+        .wrap
+            .description
+                h1
+                    | 바티칸 박물관 안토니오 파올루찌 관장님과 함께
+            .masonry
+                .grid
+                    .grid-sizer
+                    .grid-item.grid-item--100
+                        h4
+                            | 이태리 민속 박물관에서의 한국 전통 공예전시 매듭, 도자기, 나전칠기 카탈록을 보시고 초청해주셨습니다.
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/antonio/${image.img}.png`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
+

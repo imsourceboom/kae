@@ -29,7 +29,7 @@ const conf = {
         },
         pug: {
             index: './src/pug/index.pug',
-            pages: './src/pug/pages/*.pug',
+            pages: './src/pug/pages/**/*.pug',
             buildIndex: './build',
             buildPages: './build/html'
         },

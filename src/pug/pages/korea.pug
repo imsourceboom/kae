@@ -9,12 +9,14 @@ block main
                 -
                     var gallerys = [
                         {
+                            link: 'roma',
                             img: '/assets/images/korea/gallery/roma.png',
                             titleTop: '[로마&서울&로마]',
                             titleMiddle: '이탈리아 나폴리타노 대통령',
                             titleBottom: '한국방문기념 전시회',
                         },
                         {
+                            link: 'opera',
                             img: '/assets/images/korea/gallery/opera.png',
                             titleTop: '로마 오페라극장 프로덕션',
                             titleMiddle: '오페라 "아이타" (2007)',
@@ -24,7 +26,7 @@ block main
                 each g in gallerys
                     li
                         figure
-                            a(href="")
+                            a(href=`/html/korea/${g.link}.html`)
                                 img(src=`${g.img}`, alt="")
                                 figcaption= g.titleTop
                                     p= g.titleMiddle
