@@ -32,10 +32,10 @@ mySwiper.on('slideChange', function () {
     if (this.realIndex === 0) {
         headerSelf.style.color = 'rgba(255, 30, 142, 1)';
     }
-    if (this.realIndex === 1 || this.realIndex === 5) {
+    if (this.realIndex === 1 || this.realIndex === 2 || this.realIndex === 6) {
         headerSelf.style.color = 'rgba(0,0,0, 1)';
     }
-    if (this.realIndex === 2 || this.realIndex === 3 || this.realIndex === 4 || this.realIndex === 6 || this.realIndex === 7) {
+    if (this.realIndex === 3 || this.realIndex === 4 || this.realIndex === 5 || this.realIndex === 7 || this.realIndex === 8) {
         headerSelf.style.color = 'rgba(255,255,255, 1)';
     }
 })

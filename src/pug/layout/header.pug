@@ -1,8 +1,8 @@
 header
     .container
         figure.logo
-            //- a(href="/index.html")
-            //-     img(src="/assets/images/logo.png", alt="")
+            a(href="/")
+                img(src="/assets/images/logo.png", alt="")
         nav
             ul
                 li
@@ -14,6 +14,17 @@ header
                 li
                     .korean
                         a(href="/html/korea.html") Korean portfolio
+                li
+                    .translate-mobile
+                        a.ko(href="")
+                            img(src="/assets/images/icons/kr.svg", alt="")
+                        a.it(href="")
+                            img(src="/assets/images/icons/it.svg", alt="")
+        .translate-desk
+            a.ko(href="")
+                img(src="/assets/images/icons/kr.svg", alt="")
+            a.it(href="")
+                img(src="/assets/images/icons/it.svg", alt="")
         .hamburger.hamburger--squeeze.js-hamburger
             .hamburger-box
                 .hamburger-inner

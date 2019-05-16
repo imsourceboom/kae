@@ -45,7 +45,7 @@ const swiperContainer = swiper.container;
     index Page
 */
 if (swiperContainer !== null) {
-    logo.classList.add('none');
+    // logo.classList.add('none');
     logo.innerHTML = logoPink;
 }
 

@@ -7,23 +7,28 @@ section.represent {
     }
 
     &.second-02 {
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
     }
 
     &.third-03 {
-        background-color: rgba(138, 123, 150, 1);
+        background-color: rgba(0, 0, 0, 1);
     }
 
     &.fourth-04 {
-        background-color: rgba(0, 26, 31, 1);
+        background-color: rgba(138, 123, 150, 1);
     }
 
     &.fifth-05 {
+        background-color: rgba(0, 26, 31, 1);
+    }
+
+    &.sixth-06 {
         background-color: rgba(242, 237, 228, 1);
         color: rgba(0, 0, 0, 1);
     }
 
-    &.sixth-06 {
+    &.seventh-07 {
         background-color: rgba(0, 0, 0, 1);
     }
 
@@ -194,7 +199,8 @@ section.represent {
 
     }
 
-    &.first-01 {
+    &.first-01,
+    &.second-02 {
         article.wrap {
             flex-direction: column;
 
