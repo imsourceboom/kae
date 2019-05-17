@@ -230,6 +230,7 @@ section.represent {
                 height: 35%;
 
                 .desktop {
+                    width: fit-content;
                     bottom: 30%;
                     left: 50%;
                     transform: translateX(-50%);
@@ -254,6 +255,24 @@ section.represent {
                     top: 63%;
                     left: 67%;
                 }
+            }
+        }
+    }
+
+    &.second-02 {
+        article.wrap {
+
+            .image-box.second {
+                height: 70%;
+
+                img {
+                    height: 90%;
+                    object-fit: contain;
+                }
+            }
+
+            .content-box {
+                height: 30%;
             }
         }
     }
