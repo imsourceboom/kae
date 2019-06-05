@@ -1,0 +1,78 @@
+extends ../../_layout
+
+block main
+    section.detail.container.hanji2019
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/gallery/hanji2019.png", alt="")
+                .contents
+                    .box
+                        .title 2019 한지 전시회
+                        .time 기간
+                            span 2019년 6월 10일 - 8월 31일
+                        .place 장소
+                            span 이태리 국립 민속 박물관
+                        .cooperation
+                            p 협력기관
+                            span 
+                                | 원주 한지개발원, 원주 한지테마파크, 원주시, 강원도,
+                                | <br/>주한 이탈리아 대사관
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                            },
+                            {
+                                img: '3',
+                            },
+                            {
+                                img: '4',
+                            },
+                            {
+                                img: '5',
+                            },
+                            {
+                                img: '6',
+                            },
+                            {
+                                img: '7',
+                            },
+                            {
+                                img: '8',
+                            },
+                            {
+                                img: '9',
+                            },
+                            {
+                                img: '10',
+                            },
+                            {
+                                img: '11',
+                            },
+                            {
+                                img: '12',
+                            },
+                            {
+                                img: '13',
+                            },
+                            {
+                                img: '14',
+                            },
+                            {
+                                img: '15',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/hanji2019/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
