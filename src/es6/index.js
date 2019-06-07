@@ -1,4 +1,4 @@
-// import './httpTohttps';
+import './httpTohttps';
 // import './smoothscroll';
 // import './scrollreveal';
 // import './menu';
