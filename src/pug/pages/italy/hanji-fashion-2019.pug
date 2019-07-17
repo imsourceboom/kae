@@ -1,0 +1,54 @@
+extends ../../_layout
+
+block main
+    section.detail.container.hanji-fashion-2019
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/gallery/hanji-fashion-2019.png", alt="")
+                .contents
+                    .box
+                        .title 세계 창의적 유네스코 회의 이탈리아 파브리아노시 초청 원주 한지 패션쇼
+                        .time 기간
+                            span 2019년 6월 14일
+                        .place 장소
+                            span 이탈리아 파브리아노시 (Piazza di comune)
+                        .cooperation
+                            p 협력기관
+                            span 
+                                | 원주시, 강원도, 파브리아노시, 유네스코 회의 본부,
+                                | <br/>파브리아노 종이 박물관
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                            },
+                            {
+                                img: '3',
+                            },
+                            {
+                                img: '4',
+                            },
+                            {
+                                img: '5',
+                            },
+                            {
+                                img: '6',
+                            },
+                            {
+                                img: '7',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/hanji-fashion-2019/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
