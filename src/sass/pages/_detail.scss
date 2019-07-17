@@ -5,8 +5,9 @@ section.detail {
     &.milano-2014 {
         figure {
             p {
-                font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-size: .85rem;
+                font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 0.85rem;
                 line-height: 1.8;
             }
         }
@@ -15,7 +16,6 @@ section.detail {
     &.vocal,
     &.antonio {
         .description {
-
             margin-bottom: 3rem !important;
 
             @media (min-width: 1024px) {
@@ -25,7 +25,8 @@ section.detail {
             }
 
             h1 {
-                font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 font-weight: bolder;
                 font-size: 18px;
                 line-height: 2;
@@ -68,7 +69,7 @@ section.detail {
     }
 
     .wrap {
-        @media(min-width: 1400px) {
+        @media (min-width: 1400px) {
             & {
                 padding: 0 1rem;
             }
@@ -106,14 +107,20 @@ section.detail {
                 align-items: flex-end;
 
                 .box {
+                    max-width: 550px;
                     line-height: 1.5;
                     padding: 2rem 0 0;
                     // position: absolute;
                     bottom: 0;
 
+                    &.max-none {
+                        max-width: none;
+                    }
 
                     .title {
-                        font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+                            sans-serif;
                         font-weight: bolder;
                         font-size: 1.1rem;
                         padding-bottom: 1rem;
@@ -129,7 +136,7 @@ section.detail {
                     .time,
                     .place {
                         letter-spacing: 30px;
-                        padding-bottom: .5rem;
+                        padding-bottom: 0.5rem;
                         line-height: 1.5;
 
                         span {
@@ -156,7 +163,7 @@ section.detail {
                                 display: none;
                             }
 
-                            @media(min-width: 768px) {
+                            @media (min-width: 768px) {
                                 & {
                                     br {
                                         display: block;
@@ -167,11 +174,9 @@ section.detail {
                     }
                 }
             }
-
         }
 
         .masonry {
-
             .grid-sizer,
             .grid-item {
                 // width: 48.5%;
@@ -192,16 +197,14 @@ section.detail {
                         line-height: 1.5;
                     }
                 }
-
             }
-
 
             .grid-item {
                 margin-bottom: 17px;
 
                 img {
                     width: 100%;
-                    transition: .3s;
+                    transition: 0.3s;
                     // border-radius: 8px;
                     // box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
                     cursor: pointer;
@@ -209,7 +212,7 @@ section.detail {
 
                 p {
                     line-height: 1.6;
-                    font-size: .85rem;
+                    font-size: 0.85rem;
                     padding-top: 3px;
                 }
 
@@ -220,7 +223,7 @@ section.detail {
                     z-index: 998;
                     width: 100% !important;
                     height: 100vh !important;
-                    background-color: rgba(0, 0, 0, .8) !important;
+                    background-color: rgba(0, 0, 0, 0.8) !important;
 
                     img {
                         position: absolute;
@@ -233,7 +236,7 @@ section.detail {
                         object-fit: contain;
                         // box-shadow: 0 1px 18px 0 rgba(0, 0, 0, .8);
 
-                        @media(min-width: 1024px) {
+                        @media (min-width: 1024px) {
                             & {
                                 width: auto;
                                 height: 70%;
@@ -243,8 +246,6 @@ section.detail {
                         }
                     }
                 }
-
-
             }
         }
     }

@@ -1,0 +1,45 @@
+extends ../../_layout
+
+block main
+    section.detail.container.conference
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/gallery/conference.png", alt="")
+                .contents
+                    .box
+                        .title 로마 기록 유산보존 연구소 원주 한지 학술행사
+                        .time 기간
+                            span 2019년 6월 11일
+                        .place 장소
+                            span 로마 기록 유산보존 연구소 (ICPAL)
+                        .cooperation
+                            p 협력기관
+                            span 
+                                | 원주시, 강원도, ICPAL, 이탈리아 문화부
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                            },
+                            {
+                                img: '3',
+                            },
+                            {
+                                img: '4',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/conference/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
+
