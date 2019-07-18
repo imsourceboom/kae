@@ -63,6 +63,7 @@ section.detail {
             }
 
             .contents {
+                flex: none !important;
                 justify-content: flex-start !important;
             }
         }
