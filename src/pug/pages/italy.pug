@@ -12,13 +12,15 @@ block main
                             link: 'hanji-fashion-2019',
                             img: '/assets/images/italy/gallery/hanji-fashion-2019.png',
                             titleTop: '세계 창의적 유네스코 회의',
-                            titleBottom: '이탈리아 파브리아노시 한지 패션쇼'
+                            titleMiddle: '이탈리아 파브리아노시',
+                            titleBottom: '한지 패션쇼'
                         },
                         {
                             link: 'hanji-2019',
                             img: '/assets/images/italy/gallery/hanji-2019.png',
-                            titleTop: '이탈리아 파브리아노시 종이 박물관 초청 원주 한지 전시회',
-                            titleBottom: ''
+                            titleTop: '이탈리아 파브리아노시',
+                            titleMiddle: '종이 박물관 초청',
+                            titleBottom: '원주 한지 전시회'
                         },
                         {
                             link: 'conference',
@@ -73,8 +75,9 @@ block main
                         {
                             link: 'vocal',
                             img: '/assets/images/italy/gallery/vocal.png',
-                            titleTop: '2010-2014년 재이 한국대사관 후원',
-                            titleBottom: '한국 성악가 이탈리아 도시 순회 연주회'
+                            titleTop: '2010-2014 한국대사관 후원',
+                            titleMiddle: '한국 성악가 이탈리아',
+                            titleBottom: '도시 순회 연주회'
                         },
                         {
                             link: 'antonio',
@@ -89,6 +92,7 @@ block main
                             a(href=`/html/italy/${g.link}.html`)
                                 img(src=`${g.img}`, alt="")
                                 figcaption= g.titleTop
+                                    p= g.titleMiddle
                                     p= g.titleBottom
     footer
         | ⓒ Korean art in europe. All rights reserved.

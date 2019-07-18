@@ -1,0 +1,32 @@
+extends ../../_layout
+
+block main
+    section.detail.container.flamenco
+        .wrap
+            .description
+
+                .contents
+                    .box.max-none
+                        .title 스페인 최고의 무용수들과 함께하는 플라멩고
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/korea/flamenco/${image.img}.png`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
+
+
+

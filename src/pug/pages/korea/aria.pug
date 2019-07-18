@@ -1,0 +1,30 @@
+extends ../../_layout
+
+block main
+    section.detail.container.aria
+        .wrap
+            .description
+
+                .contents
+                    .box.max-none
+                        .title 이탈리아 음악가와 함께하는 오페라 아리아와 칸소네
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/korea/aria/${image.img}.png`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
+
+
+
+
