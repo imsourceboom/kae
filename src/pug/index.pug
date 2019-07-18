@@ -1,129 +1,5 @@
 extends ./_layout
 
--
-    var represents = [
-        {
-            // Head font color - white
-            class: 'hanji-fashion-2019',
-            imgBig: '/assets/images/represent/hanji-fashion-2019.png',
-            mobileTitle:'2019 파브리아노시 한지 패션쇼',
-            title: '세계 창의적 유네스코 회의 이탈리아 파브리아노시 초청 원주 한지 패션쇼',
-            time: '2019년 6월 14일',
-            place: '이태리 파브리아노시 (Piazza di comune)',
-            cooperation: '원주시, 강원도 ,파브리아노시, 유네스코 회의 본부, 파브리아노 종이 박물관',
-            link: '/html/italy/hanji-fashion-2019.html',
-        },
-        {
-            // Head font color - white
-            class: 'hanji-2019',
-            imgBig: '/assets/images/represent/hanji-2019.png',
-            mobileTitle:'파브리아노 종이 박물관 한지 전시회',
-            title: '이탈리아 파브리아노 종이 박물관 초청 원주 한지 전시회',
-            time: '2019년 6월 10일 - 8월 31일',
-            place: '파브리아노 종이 박물관',
-            cooperation: '원주시, 강원도, 파브리아노시, 유네스코 회의 본부, 파브리아노 박물관',
-            link: '/html/italy/hanji-2019.html',
-        },
-        {
-            // Head font color - white
-            class: 'conference',
-            imgBig: '/assets/images/represent/conference.png',
-            mobileTitle:'로마 기록 유산보존 연구소 원주 한지 학술행사',
-            title: '로마 기록 유산보존 연구소 원주 한지 학술행사',
-            time: '2014년 6월 11일',
-            place: '로마 기록 유산보존 연구소 (ICPAL)',
-            cooperation: '원주시, 강원도, ICPAL, 이탈리아 문화부',
-            link: '/html/italy/conference.html',
-        },
-        {
-            // Head font color - black
-            class: 'triennale-2014',
-            imgBig: '/assets/images/represent/triennale-2014.png',
-            mobileTitle:'2014 밀라노 트리엔날레 뮤지엄',
-            title: '2014 밀라노 트리엔날레 뮤지엄 한국관 전시 [기획의원]',
-            time: '2014년 4월 8일 - 4월 13일',
-            place: '이태리 밀라노 트리엔날레 뮤지엄',
-            cooperation: '문화관광 체육부, 주이탈리아 대사관',
-            link: '/html/italy/triennale-2014.html',
-        },
-        {
-            // Head font color - black
-            class: 'triennale-2013',
-            imgBig: '/assets/images/represent/triennale-2013.png',
-            mobileTitle:'2013 밀라노 트리엔날레 뮤지엄',
-            title: '2013 밀라노 트리엔날레 뮤지엄 한국관 전시 [기획의원]',
-            time: '2013년 4월 9일 - 4월 14일',
-            place: '이태리 밀라노 트리엔날레 뮤지엄',
-            cooperation: '문화관광 체육부, 주이탈리아 대사관',
-            link: '/html/italy/triennale-2013.html',
-        },
-        {
-            // Head font color - white
-            class: 'muhyoung',
-            imgBig: '/assets/images/represent/muhyoung_big.png',
-            imgMiddle: '/assets/images/represent/muhyoung_middle.png',
-            imgSmall: '/assets/images/represent/muhyoung_small.png',
-            mobileTitle:'2013년 서울시 무형 문화재',
-            title: '서울시 무형 문화재',
-            time: '2013년 5월 14일 - 7월 14일',
-            place: '이태리 로마 국립 동양 민속 박물관',
-            cooperation: '서울시, 서울시 무형문화재단, 문화관광 체육부, 이태리 문화관광부, 주한 이탈리아 대사관',
-            link: '/html/italy/muhyoung.html',
-        },
-        {
-            // Head font color - white
-            class: 'hanji-2011',
-            imgBig: '/assets/images/represent/hanji_big.png',
-            imgMiddle: '/assets/images/represent/hanji_middle.png',
-            imgSmall: '/assets/images/represent/hanji_small.png',
-            mobileTitle:'2011년 한지 전시회',
-            title: '한지 전시회',
-            time: '2011년 6월 9일 - 8월 7일',
-            place: '이태리 국립 민속 박물관',
-            cooperation: '원주 한지개발원, 원주 한지테마파크, 원주시, 강원도, 주한 이탈리아 대사관',
-            link: '/html/italy/hanji-2011.html',
-        },
-        {
-            // Head font color - white
-            class: 'najeon',
-            imgBig: '/assets/images/represent/najeon_big.png',
-            imgMiddle: '/assets/images/represent/najeon_middle.png',
-            imgSmall: '/assets/images/represent/najeon_small.png',
-            mobileTitle:'2010년 한국의 나전과 칠예전',
-            title: '한국의 나전과 칠예전',
-            time: '2010년 4월 8일 - 5월 12일',
-            place: '이태리 민속박물관',
-            cooperation: '문화재청, 주한 이탈리아 대사관, 외교통상부, 이탈리아 문화부',
-            link: '/html/italy/najeon.html',
-        },
-        {
-            // Head font color - black
-            class: 'cheongja',
-            imgBig: '/assets/images/represent/cheongja_big.png',
-            imgMiddle: '/assets/images/represent/cheongja_middle.png',
-            imgSmall: '/assets/images/represent/cheongja_small.png',
-            mobileTitle:'2009년 강진고려청자 유럽순회전',
-            title: '강진고려청자 유럽순회전',
-            time: '2009년 4월 25일 - 5월 6일',
-            place: '로마 국립 동양 박물관',
-            cooperation: '이탈리아 문화부, 외교통상부',
-            link: '/html/italy/cheongja.html',
-        },
-        {
-            // Head font color - white
-            class: 'maedeup',
-            imgBig: '/assets/images/represent/maedeup_big.png',
-            imgMiddle: '/assets/images/represent/maedeup_middle.png',
-            imgSmall: '/assets/images/represent/maedeup_small.png',
-            mobileTitle:'2009년 한국의 매듭전',
-            title: '한국의 매듭전',
-            time: '2009년 5월 12일 - 6월 12일',
-            place: '로마 국립 동양 박물관',
-            cooperation: '문화체육관광부, 외교통상부, 한국 공예문화 진흥원, 주한 이탈리아 대사관',
-            link: '/html/italy/maedeup.html',
-        },
-    ]
-
 block main
     //- include layout/index-header
     .swiper-container
@@ -131,6 +7,129 @@ block main
             .swiper-slide
                 include section/index/intro
 
+            -
+                var represents = [
+                    {
+                        // Head font color - white
+                        class: 'hanji-fashion-2019',
+                        imgBig: '/assets/images/represent/hanji-fashion-2019.png',
+                        mobileTitle:'2019 파브리아노시 한지 패션쇼',
+                        title: '세계 창의적 유네스코 회의 이탈리아 파브리아노시 초청 원주 한지 패션쇼',
+                        time: '2019년 6월 14일',
+                        place: '이태리 파브리아노시 (Piazza di comune)',
+                        cooperation: '원주시, 강원도 ,파브리아노시, 유네스코 회의 본부, 파브리아노 종이 박물관',
+                        link: '/html/italy/hanji-fashion-2019.html',
+                    },
+                    {
+                        // Head font color - white
+                        class: 'hanji-2019',
+                        imgBig: '/assets/images/represent/hanji-2019.png',
+                        mobileTitle:'파브리아노 종이 박물관 한지 전시회',
+                        title: '이탈리아 파브리아노 종이 박물관 초청 원주 한지 전시회',
+                        time: '2019년 6월 10일 - 8월 31일',
+                        place: '파브리아노 종이 박물관',
+                        cooperation: '원주시, 강원도, 파브리아노시, 유네스코 회의 본부, 파브리아노 박물관',
+                        link: '/html/italy/hanji-2019.html',
+                    },
+                    {
+                        // Head font color - white
+                        class: 'conference',
+                        imgBig: '/assets/images/represent/conference.png',
+                        mobileTitle:'로마 기록 유산보존 연구소 원주 한지 학술행사',
+                        title: '로마 기록 유산보존 연구소 원주 한지 학술행사',
+                        time: '2014년 6월 11일',
+                        place: '로마 기록 유산보존 연구소 (ICPAL)',
+                        cooperation: '원주시, 강원도, ICPAL, 이탈리아 문화부',
+                        link: '/html/italy/conference.html',
+                    },
+                    {
+                        // Head font color - black
+                        class: 'triennale-2014',
+                        imgBig: '/assets/images/represent/triennale-2014.png',
+                        mobileTitle:'2014 밀라노 트리엔날레 뮤지엄',
+                        title: '2014 밀라노 트리엔날레 뮤지엄 한국관 전시 [기획의원]',
+                        time: '2014년 4월 8일 - 4월 13일',
+                        place: '이태리 밀라노 트리엔날레 뮤지엄',
+                        cooperation: '문화관광 체육부, 주이탈리아 대사관',
+                        link: '/html/italy/triennale-2014.html',
+                    },
+                    {
+                        // Head font color - black
+                        class: 'triennale-2013',
+                        imgBig: '/assets/images/represent/triennale-2013.png',
+                        mobileTitle:'2013 밀라노 트리엔날레 뮤지엄',
+                        title: '2013 밀라노 트리엔날레 뮤지엄 한국관 전시 [기획의원]',
+                        time: '2013년 4월 9일 - 4월 14일',
+                        place: '이태리 밀라노 트리엔날레 뮤지엄',
+                        cooperation: '문화관광 체육부, 주이탈리아 대사관',
+                        link: '/html/italy/triennale-2013.html',
+                    },
+                    {
+                        // Head font color - white
+                        class: 'muhyoung',
+                        imgBig: '/assets/images/represent/muhyoung_big.png',
+                        imgMiddle: '/assets/images/represent/muhyoung_middle.png',
+                        imgSmall: '/assets/images/represent/muhyoung_small.png',
+                        mobileTitle:'2013년 서울시 무형 문화재',
+                        title: '서울시 무형 문화재',
+                        time: '2013년 5월 14일 - 7월 14일',
+                        place: '이태리 로마 국립 동양 민속 박물관',
+                        cooperation: '서울시, 서울시 무형문화재단, 문화관광 체육부, 이태리 문화관광부, 주한 이탈리아 대사관',
+                        link: '/html/italy/muhyoung.html',
+                    },
+                    {
+                        // Head font color - white
+                        class: 'hanji-2011',
+                        imgBig: '/assets/images/represent/hanji_big.png',
+                        imgMiddle: '/assets/images/represent/hanji_middle.png',
+                        imgSmall: '/assets/images/represent/hanji_small.png',
+                        mobileTitle:'2011년 한지 전시회',
+                        title: '한지 전시회',
+                        time: '2011년 6월 9일 - 8월 7일',
+                        place: '이태리 국립 민속 박물관',
+                        cooperation: '원주 한지개발원, 원주 한지테마파크, 원주시, 강원도, 주한 이탈리아 대사관',
+                        link: '/html/italy/hanji-2011.html',
+                    },
+                    {
+                        // Head font color - white
+                        class: 'najeon',
+                        imgBig: '/assets/images/represent/najeon_big.png',
+                        imgMiddle: '/assets/images/represent/najeon_middle.png',
+                        imgSmall: '/assets/images/represent/najeon_small.png',
+                        mobileTitle:'2010년 한국의 나전과 칠예전',
+                        title: '한국의 나전과 칠예전',
+                        time: '2010년 4월 8일 - 5월 12일',
+                        place: '이태리 민속박물관',
+                        cooperation: '문화재청, 주한 이탈리아 대사관, 외교통상부, 이탈리아 문화부',
+                        link: '/html/italy/najeon.html',
+                    },
+                    {
+                        // Head font color - black
+                        class: 'cheongja',
+                        imgBig: '/assets/images/represent/cheongja_big.png',
+                        imgMiddle: '/assets/images/represent/cheongja_middle.png',
+                        imgSmall: '/assets/images/represent/cheongja_small.png',
+                        mobileTitle:'2009년 강진고려청자 유럽순회전',
+                        title: '강진고려청자 유럽순회전',
+                        time: '2009년 4월 25일 - 5월 6일',
+                        place: '로마 국립 동양 박물관',
+                        cooperation: '이탈리아 문화부, 외교통상부',
+                        link: '/html/italy/cheongja.html',
+                    },
+                    {
+                        // Head font color - white
+                        class: 'maedeup',
+                        imgBig: '/assets/images/represent/maedeup_big.png',
+                        imgMiddle: '/assets/images/represent/maedeup_middle.png',
+                        imgSmall: '/assets/images/represent/maedeup_small.png',
+                        mobileTitle:'2009년 한국의 매듭전',
+                        title: '한국의 매듭전',
+                        time: '2009년 5월 12일 - 6월 12일',
+                        place: '로마 국립 동양 박물관',
+                        cooperation: '문화체육관광부, 외교통상부, 한국 공예문화 진흥원, 주한 이탈리아 대사관',
+                        link: '/html/italy/maedeup.html',
+                    },
+                ]
             each v, i in represents
                 .swiper-slide
                     section.represent(class=`${v.class}`)
