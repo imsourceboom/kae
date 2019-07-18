@@ -161,7 +161,8 @@ section.represent {
                             line-height: 1.5;
 
                             span {
-                                letter-spacing: initial;
+                                letter-spacing: 0px;
+                                // letter-spacing: initial;
                             }
                         }
 
