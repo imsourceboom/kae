@@ -87,10 +87,14 @@ section.korea {
                     }
 
                     figcaption {
-                        white-space: nowrap;
+                        word-break: keep-all;
                         text-align: center;
                         line-height: 1.3;
                         padding-top: 1rem;
+
+                        span {
+                            font-style: italic;
+                        }
                     }
                 }
             }
