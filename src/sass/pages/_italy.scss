@@ -68,6 +68,11 @@ section.korea {
 
                 figure {
                     width: 85%;
+                    cursor: pointer;
+
+                    a {
+                        cursor: inherit;
+                    }
 
                     @media (max-width: 767px) {
                         font-size: 14px;
