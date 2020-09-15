@@ -1,0 +1,81 @@
+extends ../../_layout
+
+block main
+    section.detail.container.uliviero
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/gallery/uliviero.jpg", alt="")
+                .contents
+                    .box
+                        .title [이탈리아 디자인 위크] 이탈리아 화가의 지중해의 향연.. Uliviero Ulivieri 스페셜 전시
+                        .time 기간
+                            span 2020년 09월 04일 (금) ~ 2020년 09월 13일 (일)
+                        .place 장소
+                            span 현대백화점 본점 5층 대행사장!
+                        //- .cooperation
+                            p 협력기관
+                            span 
+                                | 원주시, 강원도, 파브리아노시, 유네스코 회의 본부,
+                                | <br/>파브리아노 종이 박물관
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                            },
+                            {
+                                img: '3',
+                            },
+                            {
+                                img: '4',
+                            },
+                            {
+                                img: '5',
+                            },
+                            {
+                                img: '6',
+                            },
+                            {
+                                img: '7',
+                            },
+                            {
+                                img: '8',
+                            },
+                            {
+                                img: '9',
+                            },
+                            {
+                                img: '10',
+                            },
+                            {
+                                img: '11',
+                            },
+                            {
+                                img: '12',
+                            },
+                            {
+                                img: '13',
+                            },
+                            {
+                                img: '14',
+                            },
+                            {
+                                img: '15',
+                            },
+                            {
+                                img: '16',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/uliviero/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.

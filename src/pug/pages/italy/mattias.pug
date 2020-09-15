@@ -1,0 +1,51 @@
+extends ../../_layout
+
+block main
+    section.detail.container.mattias
+        .wrap
+            .description
+                figure
+                    img(src="/assets/images/italy/mattias/7.jpg", alt="")
+                .contents
+                    .box
+                        .title 독일 작가 Mattias Brandes
+                        //- .time 기간
+                            span 2020년 09월 04일 (금) ~ 2020년 09월 13일 (일)
+                        //- .place 장소
+                            span 현대백화점 본점 5층 대행사장!
+                        //- .cooperation
+                            p 협력기관
+                            span 
+                                | 원주시, 강원도, 파브리아노시, 유네스코 회의 본부,
+                                | <br/>파브리아노 종이 박물관
+            .galley-wrap
+            .masonry
+                .grid
+                    .grid-sizer
+                    -
+                        var images = [
+                            {
+                                img: '1',
+                            },
+                            {
+                                img: '2',
+                            },
+                            {
+                                img: '3',
+                            },
+                            {
+                                img: '4',
+                            },
+                            {
+                                img: '5',
+                            },
+                            {
+                                img: '6',
+                            },
+                        ]
+                    each image in images
+                        .grid-item
+                            img(src=`/assets/images/italy/mattias/${image.img}.jpg`, alt="")
+                            p= image.comment
+    footer
+        | ⓒ Korean art in europe. All rights reserved.
