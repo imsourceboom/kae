@@ -20,7 +20,7 @@ const imageSet = () => {
         imagemin(
           [
             imagemin.gifsicle({ interlaced: true }),
-            imagemin.jpegtran({ quality: 75, progressive: true }),
+            imagemin.mozjpeg({ quality: 75, progressive: true }),
             imagemin.optipng({ optimizationLevel: 5 }),
             imagemin.svgo({
               plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
