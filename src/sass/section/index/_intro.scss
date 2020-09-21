@@ -38,17 +38,26 @@ section.intro {
             }
           }
 
-          .d-and-art {
-            display: block;
-            font-size: 1.5em;
-            margin: 1.15em 0;
-            // color: rgb(29, 29, 31);
-            color: rgb(0, 128, 1);
+          .dnart {
+            margin: 2em 0 0;
 
-            span {
-              display: inline-block;
-              opacity: 0.4;
-              padding: 0 0.4em;
+            img {
+              width: 130px;
+              height: 65.53px;
+              margin-bottom: 0.8em;
+            }
+
+            .d-and-art {
+              display: block;
+              font-size: 1.5em;
+              // color: rgb(29, 29, 31);
+              color: rgb(0, 128, 1);
+
+              span {
+                display: inline-block;
+                opacity: 0.4;
+                padding: 0 0.4em;
+              }
             }
           }
 
@@ -68,6 +77,13 @@ section.intro {
 
               p {
                 font-size: 1.2rem;
+              }
+
+              .dnart {
+                img {
+                  width: 160px;
+                  height: 80.63px;
+                }
               }
             }
           }
